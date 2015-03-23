@@ -25,15 +25,19 @@ h4 {
 header, section, footer, aside, nav, article, hgroup {
 	display: block; /*all things are on top of eachother*/
 }
+
+
 body {
-	background-image: url('pics/brush.jpg');
+	background-image: url('pics/brushblurr.png');
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
 	display: -webkit-box;
 	-webkit-box-pack: center; /*when website is bigger than boxes, inside, just center the content*/
 	
+
 }
+
 #big_wrapper {
 	max-width: 1000px;
 	margin: 20px 0px;
@@ -50,7 +54,7 @@ body {
 
 }
 #top_menu {
-	border: 1px solid rgba(255, 255, 255, 0.0);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.27);
 	background: rgba(255, 255, 255, 0.03);
 	color:white;
 	/*-webkit-border-radius:4px; /*ROUNDS THE EDGES of MENU*/
@@ -59,10 +63,13 @@ body {
 #top_menu li{
 	display: inline-block;
 	list-style: none;
-	padding:5px;
-	font:bold 14px ;
+	font-size: 26px;
+	padding:20px;
+	font-weight: bold;
+	opacity: .65;
+	margin-right: -24px;
 	-webkit-border-radius:2px; /*ROUNDS THE EDGES of MENU li items*/
-	-webkit-transition: opacity 2s;
+	-webkit-transition: opacity 1s;
 }
 #header {
 	width: 100%;
@@ -75,8 +82,9 @@ body {
 	opacity: .8;
 }
 #top_menu li:hover{
-	opacity: .1;
+	opacity: .4;
 }
+
 #new_div {
 	display:-webkit-box;
 	-webkit-box-orient: horizontal;
@@ -177,8 +185,12 @@ ul.rig.columns-4 li {
 }
 #the_footer {
 	text-align: center;
-	padding: 20px;
-	border-top: 2px solid black;
+	padding-bottom: 4px;
+    padding-top: 41px;
+	border-top: 2px rgba(0, 0, 0, 0.63);
+}
+.top {
+	opacity: .5;
 }
 
 
